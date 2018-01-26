@@ -1,4 +1,5 @@
-wp-content/themes/Avada/includes/plugins
+wp-content/themes/Avada/includes
+wp-json
 feed
 comments
 author
