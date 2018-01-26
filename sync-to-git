@@ -1,1 +1,0 @@
-git add --all && git commit -m "From Wordpress" && git push --mirror https://@github.com/abilitymatrix/abilitymatrix.github.io.git
