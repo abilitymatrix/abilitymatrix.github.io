@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Cybersecurity Consulting for Canadian & US SMEs</title>
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:400,600,700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --primary-color: rgb(156,118,124);
+      --font-family: 'Montserrat', Arial, sans-serif;
+      --text-color: #222;
+      --bg-color: #fff;
+      --section-padding: 3rem 1.5rem;
+      --max-width: 900px;
+    }
+    html {
+      font-size: 100%;
+    }
+    body {
+      font-family: var(--font-family);
+      background: var(--bg-color);
+      color: var(--text-color);
+      margin: 0;
+      padding: 0;
+      line-height: 1.7;
+    }
+    /* Skip link styles for accessibility */
+    .skip-link {
+      position: absolute;
+      left: -999px;
+      top: auto;
+      width: 1px;
+      height: 1px;
+      overflow: hidden;
+      background: #fff;
+      color: #000;
+      z-index: 1000;
+    }
+    .skip-link:focus {
+      left: 16px;
+      top: 16px;
+      width: auto;
+      height: auto;
+      padding: 8px 16px;
+      font-size: 1rem;
+      border: 2px solid var(--primary-color);
+      border-radius: 4px;
+    }
+    header {
+      background: var(--bg-color);
+      padding: 2rem 0 1rem 0;
+      border-bottom: 1px solid #eee;
+      text-align: center;
+    }
+    nav {
+      text-align: right;
+      padding-right: 3rem; /* Adds white space to the right */
+      margin-bottom: 0.5rem;
+    }
+    .nav-list {
+      display: flex;
+      gap: 1.5rem;
+      list-style: none;
+      justify-content: flex-end;
+      padding: 0;
+      margin: 0;
+    }
+    .nav-list li {
+      margin: 0;
+    }
+    .nav-list li a {
+      color: var(--primary-color);
+      text-decoration: none;
+      font-weight: 600;
+      font-size: 1rem;
+      padding: 0.5em 0.75em;
+      border-radius: 4px;
+      transition: background 0.2s, outline 0.2s;
+    }
+    .nav-list li a:focus,
+    .nav-list li a:hover {
+      background: #f3e9eb;
+      outline: 2px solid var(--primary-color);
+      outline-offset: 2px;
+    }
+    header h1 {
+      color: var(--primary-color);
+      font-weight: 700;
+      font-size: 2.4rem;
+      margin: 0 0 0.5rem 0;
+    }
+    header p {
+      font-size: 1.15rem;
+      margin: 0;
+      color: #555;
+    }
+    main {
+      max-width: var(--max-width);
+      margin: 0 auto;
+      padding: 0;
+    }
+    section {
+      padding: var(--section-padding);
+      border-bottom: 1px solid #f2f2f2;
+    }
+    h2 {
+      color: var(--primary-color);
+      font-size: 1.6rem;
+      font-weight: 600;
+      margin-bottom: 0.7rem;
+    }
+    h3 {
+      color: var(--primary-color);
+      font-size: 1.2rem;
+      font-weight: 600;
+      margin-top: 2rem;
+      margin-bottom: 0.5rem;
+    }
+    ul {
+      padding-left: 1.2em;
+      margin: 0.5em 0 0 0;
+    }
+    li {
+      margin-bottom: 0.5em;
+    }
+    .cta {
+      background: var(--primary-color);
+      color: #fff;
+      text-align: center;
+      padding: 2rem 1rem;
+      font-size: 1.2rem;
+      border-radius: 8px;
+      margin: 2rem 0;
+    }
+    .cta a {
+      color: #fff;
+      font-weight: 600;
+      text-decoration: underline;
+    }
+    .cta a:focus,
+    .cta a:hover {
+      outline: 2px solid #fff;
+      background: #8e5a61;
+    }
+    .services-list {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 2rem;
+      margin-top: 1.5rem;
+      margin-bottom: 1.5rem;
+    }
+    .service-item {
+      flex: 1 1 270px;
+      background: #faf7f8;
+      border-radius: 8px;
+      padding: 1.5rem 1rem;
+      margin-bottom: 1rem;
+      box-shadow: 0 2px 8px 0 rgba(156,118,124,0.04);
+    }
+    @media (max-width: 700px) {
+      .services-list {
+        flex-direction: column;
+      }
+      nav {
+        padding-right: 1rem;
+      }
+    }
+    .quote {
+      background: #f9f9f9;
+      border-left: 4px solid var(--primary-color);
+      padding: 1rem 1.5rem;
+      margin: 2rem 0;
+      font-style: italic;
+      color: #444;
+    }
+    /* Ensure sufficient color contrast for all text */
+    a, a:visited {
+      color: var(--primary-color);
+    }
+    a:focus {
+      outline: 2px solid var(--primary-color);
+      outline-offset: 2px;
+    }
+    /* Responsive text scaling */
+    @media (max-width: 500px) {
+      header h1 {
+        font-size: 1.5rem;
+      }
+      h2 {
+        font-size: 1.2rem;
+      }
+      h3 {
+        font-size: 1rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <!-- Skip to main content link for accessibility -->
+  <a href="#main-content" class="skip-link">Skip to main content</a>
+  <header>
+    <nav aria-label="Main navigation">
+      <ul class="nav-list">
+        <li><a href="#services">Services</a></li>
+        <li><a href="#approach">Our Approach</a></li>
+        <li><a href="#ciso">Fractional CISO</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+    <h1>Cybersecurity Consulting for Canadian &amp; US SMEs</h1>
+    <p>Balancing security, cost, and business needs with a focus on transformation, inclusion, and compliance.</p>
+  </header>
+  <main id="main-content">
+    <section id="intro">
+      <div class="quote" aria-label="Introductory quote">
+        Every organization faces unique security risks. Our mission is to help you find the right balance between effective protection and practical investment, supporting your business as it grows and evolves.
+      </div>
+      <p>
+        We specialize in building and transforming cybersecurity programs for small and medium-sized enterprises in Canada and the US. Our consulting services are designed to be inclusive, accessible, and mindful of your team's diverse needs. We understand that cybersecurity is not just a technical challenge—it's a journey of organizational change.
+      </p>
+    </section>
+
+    <section id="services">
+      <h2>Our Cybersecurity Services</h2>
+      <div class="services-list">
+        <div class="service-item">
+          <h3>Vulnerability Assessments and Penetration Testing</h3>
+          <p>
+            Identify and address potential weaknesses before they can be exploited. We use industry-leading methodologies to assess your systems, applications, and cloud environments, providing actionable recommendations tailored to your business context.
+          </p>
+        </div>
+        <div class="service-item">
+          <h3>Policies, Standards, and Procedures</h3>
+          <p>
+            Develop clear, inclusive, and effective policies that support compliance and empower your team. We help you create and implement standards and procedures that fit your organization's culture and regulatory requirements.
+          </p>
+        </div>
+        <div class="service-item">
+          <h3>Auditing and Gap Analysis</h3>
+          <p>
+            Evaluate your current security posture and identify areas for improvement. Our audits and gap analyses are designed to be collaborative and constructive, supporting continuous improvement.
+          </p>
+        </div>
+        <div class="service-item">
+          <h3>Cybersecurity Budgeting</h3>
+          <p>
+            Make informed decisions about your security investments. We help you align your cybersecurity budget with your business risks and priorities, ensuring you get the most value from every dollar spent.
+          </p>
+        </div>
+        <div class="service-item">
+          <h3>Requirements Specifications for Tools and Systems</h3>
+          <p>
+            Define clear and practical requirements for selecting and implementing security tools and systems. Our approach ensures that your solutions are scalable, inclusive, and aligned with your business needs.
+          </p>
+        </div>
+        <div class="service-item">
+          <h3>Securing Cloud Infrastructure</h3>
+          <p>
+            Protect your data and operations in the cloud with expert guidance on configuration, monitoring, and compliance. We support secure cloud adoption and ongoing cloud security management.
+          </p>
+        </div>
+        <div class="service-item">
+          <h3>Security Best Practices for Custom Software Development</h3>
+          <p>
+            Integrate security into your software development lifecycle. We provide training, reviews, and best practices to help your development teams build secure and resilient applications from the start.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section id="approach">
+      <h2>Our Unique Approach</h2>
+      <ul>
+        <li><strong>Transformation-focused:</strong> We support your team through change, offering training, newsletters, and hands-on exercises to encourage new security behaviours at every level.</li>
+        <li><strong>Practical and business-aligned:</strong> Our programs are designed to be actionable and sustainable, not just theoretical.</li>
+        <li><strong>Long-term partnership:</strong> Cybersecurity is a marathon, not a sprint. We help you start small and build steadily, always keeping your business risks in focus.</li>
+        <li><strong>Risk-based investment:</strong> You don’t have to be the most secure organization—just secure enough to manage your unique risks and stay ahead of common threats.</li>
+        <li><strong>Inclusive and accessible:</strong> Our language, training, and policies are designed to be inclusive, supporting a diverse workforce and accessible to all team members.</li>
+      </ul>
+      <div class="quote" aria-label="Security metaphor">
+        "You don’t have to outrun the bear—just the slowest runner. In cybersecurity, you need to be better than average and aligned with your business risks, not necessarily the best in the world."
+      </div>
+    </section>
+
+    <section id="ciso">
+      <h2>Fractional Chief Information Security Officer (CISO) Services</h2>
+      <p>
+        A Chief Information Security Officer (CISO) is a senior executive responsible for developing, implementing, and overseeing your organization’s information security strategy. Our fractional CISO services provide you with expert leadership and guidance, tailored to the needs of growing organizations that may not require a full-time CISO.
+      </p>
+      <h3>What does a CISO do?</h3>
+      <ul>
+        <li>Develops and leads your information security program, aligning it with business goals and compliance requirements.</li>
+        <li>Creates and maintains security policies, standards, and procedures.</li>
+        <li>Manages risk assessments, incident response, and disaster recovery planning.</li>
+        <li>Oversees security awareness training and supports a culture of security across your organization.</li>
+        <li>Advises on cybersecurity budgeting and investment, ensuring resources are used effectively.</li>
+        <li>Reports to senior leadership and communicates security posture in plain language.</li>
+        <li>Ensures compliance with relevant laws and regulations in Canada and the US.</li>
+      </ul>
+      <div class="cta" role="region" aria-label="Contact for CISO services">
+        Interested in learning more about how a fractional CISO can support your business?
+        <a href="#contact">Contact us for a confidential conversation.</a>
+      </div>
+    </section>
+
+    <section id="contact">
+      <h2>Contact Us</h2>
+      <p>
+        Ready to take the next step in your cybersecurity journey? We welcome inquiries from organizations of all sizes and backgrounds. <br>
+        <strong>Email:</strong> <a href="mailto:info@yourcyberconsulting.ca">info@yourcyberconsulting.ca</a> <br>
+        <strong>Phone:</strong> <a href="tel:18005551234">1-800-555-1234</a>
+      </p>
+      <p>
+        We are committed to respectful, accessible, and inclusive service for all clients. If you have specific needs or requests, please let us know.
+      </p>
+    </section>
+  </main>
+</body>
+</html>
